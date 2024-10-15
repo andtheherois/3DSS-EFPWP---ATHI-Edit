@@ -702,7 +702,7 @@ upgrade_scheme                           = upgrade_scheme_ak74
 
 parent_section							 = wpn_sag545_m_sup
 
-scopes                                   = none
+scopes                                   = gauss_sight
 
 inv_weight                                         = 4.855
 scope_status                                       = 1
@@ -729,3 +729,36 @@ item_visual						= anomaly_weapons\wpn_sag545_m\wpn_sag545_sup_hud.ogf
         gl_hud_offset_pos_16x9           = -0.042473, -0.1581, 0
         gl_hud_offset_rot                = -0.327669, 0.009594, 0
         gl_hud_offset_rot_16x9           = -0.327669, 0.009594, 0
+;-----------------------------------------------------------------------------------------
+[wpn_sag545_m_sup_gauss_sight]:wpn_sag545_m_sup
+
+hud					= wpn_sag545_m_sup_gauss_sight_hud
+zoom_step_count = 4
+
+1icon_layer                              = gauss_sight
+1icon_layer_x                            = 50
+1icon_layer_y                            = -4
+
+inv_weight                                         = 5.25
+scope_status                                       = 1
+
+scope_zoom_factor                                  = 12
+zoom_rotate_time                                   = 0.25
+scope_dynamic_zoom                                 = on
+
+scope_zoom_factor_alt             = 0
+use_alt_aim_hud                   = false
+
+	s3ds_reticle_size 	= 5
+	s3ds_image_type 	= 2
+	s3ds_reticle_type 	= 6
+	ms_count 			= 2
+	ms_colors 			= 
+	magnification 		= 10
+
+[wpn_sag545_m_sup_gauss_sight_hud]:wpn_sag545_m_sup_hud
+item_visual				= anomaly_weapons\wpn_sag545_m\wpn_sag545_sup_gauss_hud.ogf
+        aim_hud_offset_pos               = -0.065828, 0.005535, -0.106664
+        aim_hud_offset_pos_16x9          = -0.065828, 0.005535, -0.106664
+        aim_hud_offset_rot               = 0.020417, 0.006331, -0.006
+        aim_hud_offset_rot_16x9          = 0.020417, 0.006331, -0.006	

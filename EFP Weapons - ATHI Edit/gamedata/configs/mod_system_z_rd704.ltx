@@ -83,7 +83,7 @@ ammo_elapsed                             = 30
 ammo_mag_size                            = 30
 startup_ammo                             = 90
 
-scopes 			                         = acog, eot, ac10632, leupold, marchf, mark8_rmr, 1p59, devo, triji, march_f_shorty, march_f_shorty_alt, specter, spec_alt, uh2, uh1_magd
+scopes 			                         = acog, eot, ac10632, leupold, marchf, mark8_rmr, 1p59, devo, triji, march_f_shorty, march_f_shorty_alt, specter, spec_alt, uh2, uh1_magd, gauss_sight
 scope_status                             = 0
 scope_zoom_factor                        = 0
 
@@ -652,3 +652,28 @@ item_visual						= anomaly_weapons\wpn_rd704_m\wpn_rd704_march_hud.ogf
         aim_hud_offset_pos_16x9          = -0.056118, -0.007949, -0.027489
         aim_hud_offset_rot               = 0.011633, 0.005209, -0.006
         aim_hud_offset_rot_16x9          = 0.011633, 0.005209, -0.006			
+;----------------------------------------------------------------
+[wpn_rd704_m_gauss_sight]:wpn_rd704_m
+hud							= wpn_rd704_m_gauss_sight_hud
+zoom_step_count = 4
+
+1icon_layer					= gauss_sight
+1icon_layer_x				= 65
+1icon_layer_y				= -9
+
+inv_weight			    = 4.52
+
+scope_status				= 1
+scope_dynamic_zoom			= on
+scope_zoom_factor           = 12
+
+
+use_alt_aim_hud				= true
+
+[wpn_rd704_m_gauss_sight_hud]:wpn_rd704_m_hud
+item_visual						= anomaly_weapons\wpn_rd704_m\wpn_rd704_gauss_hud.ogf
+
+        aim_hud_offset_pos               = -0.056376, -0.006206, -0.070226
+        aim_hud_offset_pos_16x9          = -0.056376, -0.006206, -0.070226
+        aim_hud_offset_rot               = 0.011759, 0.005314, -0.006
+        aim_hud_offset_rot_16x9          = 0.011759, 0.005314, -0.006		
